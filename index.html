@@ -8,17 +8,17 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="images/fieldandfeast-logo.png" alt="Field and Feast Logo" class="logo-image">
-            <h1>Field & Feast</h1>
-            <p class="tagline">Harvested with Care, Served with Elegance</p>
-        </div>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#offerings">Offerings</a>
-            <a href="#gallery">Gallery</a>
-        </nav>
+    <div class="logo-container">
+        <img src="images/fieldandfeast-logo.png" alt="Field and Feast Logo" class="logo-image">
+        <h1>Field & Feast</h1>
+        <p class="tagline">Harvested with Care, Served with Elegance</p>
+    </div>
     </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
 
     <main>
         <section id="about" class="hero">
@@ -54,28 +54,77 @@
             <h2>A Gallery of Field & Feast</h2>
             <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
             
-            <div class="gallery-grid">
-                <figure class="gallery-item">
-                    <img src="images/tomatoes-600w.jpg" alt="Heirloom tomatoes">
-                    <figcaption>Heirloom tomatoes at peak ripeness.</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="images/olive-oil-600w.jpg" alt="Olive oil being drizzled">
-                    <figcaption>Drizzling golden olive oil over fresh harvest.</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="images/table-setting-600w.jpg" alt="Elegant table setting">
-                    <figcaption>Elegant tablescape under the evening sky.</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="images/chef-plating-600w.jpg" alt="Chef plating food">
-                    <figcaption>Artful plating with seasonal ingredients.</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="images/basket-600w.jpg" alt="Monthly basket">
-                    <figcaption>Our monthly basket, curated with care.</figcaption>
-                </figure>
-            </div>
+          <div class="gallery-grid">
+    <figure class="gallery-item">
+        <img 
+            src="images/tomatoes-300w.jpg"
+            srcset="
+                images/tomatoes-200w.jpg 200w,
+                images/tomatoes-300w.jpg 300w,
+                images/tomatoes-600w.jpg 600w
+            "
+            sizes="(min-width: 1200px) 20vw, (min-width: 600px) 45vw, 90vw"
+            loading="lazy"
+            alt="Heirloom tomatoes">
+        <figcaption>Heirloom tomatoes at peak ripeness.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img 
+            src="images/olive-oil-300w.jpg"
+            srcset="
+                images/olive-oil-200w.jpg 200w,
+                images/olive-oil-300w.jpg 300w,
+                images/olive-oil-600w.jpg 600w
+            "
+            sizes="(min-width: 1200px) 20vw, (min-width: 600px) 45vw, 90vw"
+            loading="lazy"
+            alt="Olive oil being drizzled">
+        <figcaption>Drizzling golden olive oil over fresh harvest.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img 
+            src="images/table-setting-300w.jpg"
+            srcset="
+                images/table-setting-200w.jpg 200w,
+                images/table-setting-300w.jpg 300w,
+                images/table-setting-600w.jpg 600w
+            "
+            sizes="(min-width: 1200px) 20vw, (min-width: 600px) 45vw, 90vw"
+            loading="lazy"
+            alt="Elegant table setting">
+        <figcaption>Elegant tablescape under the evening sky.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img 
+            src="images/chef-plating-300w.jpg"
+            srcset="
+                images/chef-plating-200w.jpg 200w,
+                images/chef-plating-300w.jpg 300w,
+                images/chef-plating-600w.jpg 600w
+            "
+            sizes="(min-width: 1200px) 20vw, (min-width: 600px) 45vw, 90vw"
+            loading="lazy"
+            alt="Chef plating food">
+        <figcaption>Artful plating with seasonal ingredients.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img 
+            src="images/basket-300w.jpg"
+            srcset="
+                images/basket-200w.jpg 200w,
+                images/basket-300w.jpg 300w,
+                images/basket-600w.jpg 600w
+            "
+            sizes="(min-width: 1200px) 20vw, (min-width: 600px) 45vw, 90vw"
+            loading="lazy"
+            alt="Monthly basket">
+        <figcaption>Our monthly basket, curated with care.</figcaption>
+    </figure>
+</div>
 
             <a href="#" class="view-gallery-btn">View Our Full Gallery</a>
         </section>
@@ -85,8 +134,10 @@
         <address>
             <p>123 Estate Lane, Wine Country, CA</p>
             <p><a href="tel:5551234567">(555) 123-4567</a></p>
-            <p><a href="mailto:hello@fieldandfeast.com">hello@fieldandfeast.com</a></p>
         </address>
+        <div class="email">
+            <p><a href="mailto:hello@fieldandfeast.com">hello@fieldandfeast.com</a></p>
+        </div>
         <div class="social-links">
             <a href="#">Instagram</a>
             <a href="#">Facebook</a>
